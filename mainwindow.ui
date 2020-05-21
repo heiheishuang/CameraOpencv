@@ -1,0 +1,673 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>825</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="LabelImage">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>70</y>
+      <width>381</width>
+      <height>381</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ButtonOpen">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>30</y>
+      <width>89</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Open</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ButtonClose">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>470</y>
+      <width>89</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Close</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ButtonSaveAs">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>420</y>
+      <width>89</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Save as ...</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelFilter">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>70</y>
+      <width>67</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Filter</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ButtonFilterN">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>90</y>
+      <width>89</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Nostalgia</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ButtonFilterC">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>90</y>
+      <width>89</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Comics</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ButtonFilterSa">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>130</y>
+      <width>89</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Saturation</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ButtonFilterE">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>130</y>
+      <width>89</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Emergence</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ButtonFilterG">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>130</y>
+      <width>89</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>GroundGlass</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ButtonFilterD">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>170</y>
+      <width>89</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Distinctive</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ButtonFilterSh">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>170</y>
+      <width>89</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Sharpen</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ButtonFilterV">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>170</y>
+      <width>89</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Vignetting</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelFaceChange">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>210</y>
+      <width>101</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>FaceChange</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ButtonSmooth">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>350</y>
+      <width>89</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>SmoothFace</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ButtonSmall">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>270</y>
+      <width>89</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>SmallFace</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ButtonBig">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>230</y>
+      <width>89</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>BigEye</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ButtonLight">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>350</y>
+      <width>89</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>LightFace</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ButtonRed">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>350</y>
+      <width>89</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>RedMouth</string>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="spinBoxBig">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>230</y>
+      <width>42</width>
+      <height>26</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="spinBoxSmall">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>270</y>
+      <width>42</width>
+      <height>26</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QSlider" name="horizontalSliderBig">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>240</y>
+      <width>160</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QSlider" name="horizontalSliderSmall">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>280</y>
+      <width>160</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelMakeUp">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>330</y>
+      <width>67</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>MakeUp</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ButtonRestore">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>420</y>
+      <width>89</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Restore</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>30</y>
+      <width>89</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Camera</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>825</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>ButtonOpen</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>on_pushButton_Open_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>466</x>
+     <y>76</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>302</x>
+     <y>50</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ButtonClose</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>on_pushButton_Close_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>476</x>
+     <y>516</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>439</x>
+     <y>25</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ButtonSaveAs</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>on_pushButton_Save_As_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>604</x>
+     <y>466</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>609</x>
+     <y>27</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ButtonFilterN</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>on_pushButton_FilterN_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>467</x>
+     <y>136</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>373</x>
+     <y>76</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ButtonFilterC</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>on_pushButton_FilterC_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>596</x>
+     <y>136</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>483</x>
+     <y>84</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ButtonFilterG</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>on_pushButton_FilterG_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>722</x>
+     <y>176</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>618</x>
+     <y>119</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ButtonFilterE</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>on_pushButton_FilterE_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>624</x>
+     <y>176</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>491</x>
+     <y>133</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ButtonFilterSa</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>on_pushButton_FilterSa_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>461</x>
+     <y>176</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>365</x>
+     <y>148</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ButtonFilterD</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>on_pushButton_FilterD_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>459</x>
+     <y>216</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>365</x>
+     <y>185</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ButtonFilterSh</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>on_pushButton_FilterSh_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>591</x>
+     <y>216</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>486</x>
+     <y>183</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ButtonFilterV</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>on_pushButton_FilterV_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>695</x>
+     <y>216</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>605</x>
+     <y>184</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ButtonSmall</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>on_pushButton_FaceSmall_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>459</x>
+     <y>301</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>435</x>
+     <y>303</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ButtonBig</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>on_pushButton_FaceBig_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>467</x>
+     <y>276</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>435</x>
+     <y>351</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>on_pushButton_OpenCamera_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>584</x>
+     <y>70</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>559</x>
+     <y>48</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ButtonLight</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>on_pushButton_MakeUpLight_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>524</x>
+     <y>381</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>517</x>
+     <y>332</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ButtonSmooth</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>on_pushButton_MakeUpSmooth_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>591</x>
+     <y>378</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>569</x>
+     <y>338</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ButtonRed</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>on_pushButton_MakeUpRed_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>711</x>
+     <y>378</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>673</x>
+     <y>336</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ButtonRestore</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>on_pushButton_Restore_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>459</x>
+     <y>448</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>449</x>
+     <y>416</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>on_pushButton_Open_clicked()</slot>
+  <slot>on_pushButton_Close_clicked()</slot>
+  <slot>on_pushButton_Save_As_clicked()</slot>
+  <slot>on_pushButton_FilterC_clicked()</slot>
+  <slot>on_pushButton_FilterSa_clicked()</slot>
+  <slot>on_pushButton_FilterG_clicked()</slot>
+  <slot>on_pushButton_FilterE_clicked()</slot>
+  <slot>on_pushButton_FilterD_clicked()</slot>
+  <slot>on_pushButton_FilterSh_clicked()</slot>
+  <slot>on_pushButton_FilterV_clicked()</slot>
+  <slot>on_pushButton_FilterN_clicked()</slot>
+  <slot>on_pushButton_FaceSmall_clicked()</slot>
+  <slot>on_pushButton_FaceBig_clicked()</slot>
+  <slot>on_pushButton_OpenCamera_clicked()</slot>
+  <slot>on_pushButton_MakeUpLight_clicked()</slot>
+  <slot>on_pushButton_MakeUpRed_clicked()</slot>
+  <slot>on_pushButton_MakeUpSmooth_clicked()</slot>
+  <slot>on_pushButton_Restore_clicked()</slot>
+ </slots>
+</ui>
